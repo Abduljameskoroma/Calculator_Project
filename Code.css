@@ -17,7 +17,7 @@ body{
 
 /* Calculator Container */
 .Calculator{
-    background-color: #1A1A1A;
+    background-color: #1B0E20;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -33,7 +33,7 @@ body{
     height: 60px;
     border: none;
     outline: none;
-    background-color: #eef1f5;
+    background-color: #CCD4DD;
     border-radius: 8px;
     text-align: right;
     font-size: 24px;
@@ -48,7 +48,7 @@ button{
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
-    background-color: #dfe6ee;
+    background-color: #CCD4DD;
     transition: 0.3s;
 }
 
