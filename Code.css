@@ -1,26 +1,68 @@
-body {
+/* Reset some default spacing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #f5f5f5;
+    background-color: #f2f4f7;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.calculator {
-    background: #ffffff;
+/* Calculator Container */
+.Calculator{
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
 }
 
-button {
-    width: 60px;
+/* Input Field */
+#result{
+    grid-column: span 4;
     height: 60px;
-    margin: 6px;
-    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #eef1f5;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    color: #333;
+}
+
+/* Button Styling */
+button{
+    height: 60px;
     border: none;
     border-radius: 8px;
+    font-size: 20px;
     cursor: pointer;
+    background-color: #dfe6ee;
+    transition: 0.3s;
+}
 
+/* Hover Effect */
+button:hover{
+    background-color: #bfc9d4;
+}
+
+/* Equal Button */
+button:last-child{
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:last-child:hover{
+    background-color: #45a049;
 }
